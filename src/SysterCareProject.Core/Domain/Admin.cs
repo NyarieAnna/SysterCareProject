@@ -7,13 +7,9 @@ using SysterCareProject.Domain.Attributes;
 
 namespace SysterCareProject.Domain
 {
-    [DiscriminatorValue("Std.Requestor")]
-    public class Requestor : Person
+    [DiscriminatorValue("Std.Admin")]
+    public class Admin:Person
     {
-        public virtual string RequestorNumber { get; set; }
-    
-
 
     }
 }
- 
