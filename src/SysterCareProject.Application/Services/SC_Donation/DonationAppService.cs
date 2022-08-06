@@ -5,9 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using SysterCareProject.Domain;
-using SysterCareProject.Services.SC_Donation;
 
-namespace SysterCareProject.Services
+namespace SysterCareProject.Services.SC_Donation
 {
     public class DonationAppService : ApplicationService, IDonationAppService
     {
