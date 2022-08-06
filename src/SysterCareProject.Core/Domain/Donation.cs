@@ -10,6 +10,7 @@ namespace SysterCareProject.Domain
     public class Donation : Person
     {
         public virtual Ref_List DonationType { get; set; }
+
        
 
     }

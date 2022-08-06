@@ -10,8 +10,8 @@ namespace SysterCareProject.Domain
 {
     public class Request: AuditedEntity<Guid>
     {
-        public Requestor Requestor { get; set; }
-        public RequestRef_List Type { get; set; }
-        public DateTime RequestDate { get; set; }
+        public  virtual Requestor Requestor { get; set; }
+        public virtual RequestRef_List Type { get; set; }
+        public virtual DateTime RequestDate { get; set; }
     }
 }
