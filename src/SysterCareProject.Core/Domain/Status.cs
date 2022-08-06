@@ -10,7 +10,7 @@ namespace SysterCareProject.Domain
 {
     public class Status:AuditedEntity<Guid>
     {
-        public Request Request { get; set; }
-        public StatusRef_List StatusType { get; set; }
+        public virtual Request Request { get; set; }
+        public virtual StatusRef_List StatusType { get; set; }
     }
 }

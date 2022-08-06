@@ -31,8 +31,7 @@ namespace SysterCareProject.Services.SC_Person
 
         public  string Password { get; set; }
 
-        public User User { get; set; }
+        public long UserId { get; set; }
 
-        public  string[] RoleNames { get; set; }
     }
 }

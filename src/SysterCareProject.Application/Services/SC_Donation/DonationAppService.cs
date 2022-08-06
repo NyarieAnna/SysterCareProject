@@ -40,10 +40,6 @@ namespace SysterCareProject.Services.SC_Donation
             return await Task.FromResult(result);
         }
 
-        public Task<DonationDto> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<PagedResultDto<DonationDto>> GetAsync(PagedAndSortedResultRequestDto input, Guid id)
         {
@@ -55,8 +51,8 @@ namespace SysterCareProject.Services.SC_Donation
 
         public async Task<DonationDto> UpdateAsync(DonationDto input)
         {
-            var donation = _donationRepository;
-            var updt = await _donationRepository.UpdateAsync((Donation)ObjectMapper.Map(input, donation));
+            var bill = _donationRepository;
+            var updt = await _donationRepository.UpdateAsync((Donation)ObjectMapper.Map(input, bill));
             return ObjectMapper.Map<DonationDto>(updt);
         }
     }
