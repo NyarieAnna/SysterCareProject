@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SysterCareProject.EntityFrameworkCore;
 
 namespace SysterCareProject.Migrations
 {
     [DbContext(typeof(SysterCareProjectDbContext))]
-    partial class SysterCareProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220806224944_202208070049")]
+    partial class _202208070049
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
